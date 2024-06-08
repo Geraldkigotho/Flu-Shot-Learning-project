@@ -7,13 +7,13 @@
 
 **OVERVIEW**
 
-Vaccines play a very crucial role in disease prevention, they work by providing immunity to individuals as well communities to prevent specific communicable diseases like COVID-19, swine flu, influenza and Tuberculosis. The first vaccine was developed in 1796, by an English physician Edward Jenner and was used to vaccinate the first human against smallpox. Today’s vaccines have evolved and become more complex, robust and more efficient these is due to the continuous growth of technology and research in the health industry. Hence measures have been put in place to ascertain quality, efficiency and distribution of the vaccines. The H1N1 VACCINE was developed in 2009 and approved for use in 2010  after the swine flu pandemic broke out in 2009 killing more than two million people worldwide while the seasonal vaccine also known as the 'flu-shot' is commonly used to prevent flu (influenza) during the flu season.
+Vaccines play a crucial role in disease prevention, they work by providing immunity to individuals as well as communities to prevent specific communicable diseases like COVID-19, swine flu, influenza, and Tuberculosis. The first vaccine was developed in 1796, by an English physician Edward Jenner, and was used to vaccinate the first human against smallpox. Today’s vaccines have evolved and become more complex, robust, and more efficient these is due to the continuous growth of technology and research in the health industry. Hence measures have been put in place to ascertain the quality, efficiency, and distribution of the vaccines. The H1N1 VACCINE was developed in 2009 and approved for use in 2010  after the swine flu pandemic broke out in 2009 killing more than two million people worldwide while the seasonal vaccine also known as the 'flu-shot' is commonly used to prevent flu (influenza) during the flu season.
 
-The Center for Disease Control and Prevention (CDC) wants to understand how different individual personal characteristics influence the uptake of the H1N1 and seasonal vaccine as well as the vaccine patterns which would provide guidance for future public health efforts.
+The Centers for Disease Control and Prevention (CDC) wants to understand how different individual personal characteristics influence the uptake of the H1N1 and seasonal vaccine as well as the vaccine patterns that would provide guidance for future public health efforts.
 
 **PROBLEM STATEMENT** 
 
-Vaccines are critical for preventing communicable diseases such as COVID-19, swine flu, seasonal influenza, and tuberculosis. However, making data-driven decisions about vaccine distribution and delivery remains difficult. The CDC seeks to understand how individual features influence uptake of the vaccines so as to provide guidance for future public health efforts
+Vaccines are critical for preventing communicable diseases such as COVID-19, swine flu, seasonal influenza, and tuberculosis. However, making data-driven decisions about vaccine distribution and delivery remains difficult. The CDC seeks to understand how individual features influence the uptake of vaccines so as to provide guidance for future public health efforts
 
 **OBJECTIVES** 
 
@@ -28,7 +28,7 @@ Vaccines are critical for preventing communicable diseases such as COVID-19, swi
 
 .To determine the correlation between the uptake of both vaccines
 
-.To determine which characteristics are likely to influence one to taking a particular vaccine
+.To determine which characteristics are likely to influence one to take a particular vaccine
 
 
 ### DATA UNDERSTANDING
@@ -43,23 +43,23 @@ Data was downloaded from https://www.drivendata.org/competitions/66/flu-shot-lea
 
 These data set contained  features to be used for predicting our target variable
 
-These features are sourced from respondents reply during the phone survey
+These features are sourced from respondents' reply during the phone survey
 
 **Labels**
 
-These data set contain our target variables H1N1 and seasonal vaccine take encoded in binary form [0,1]
+These data set contain our target variables H1N1 and seasonal vaccine encoded in binary form [0,1]
 
 ### DATA PREPARATION
 
 Steps that were used to clean the data
 
-. **Completeness** (we will check for missing values , how they affect our data set and how we will handle them)
+. **Completeness** (we will check for missing values, how they affect our data set, and how we will handle them)
 
 . **Consistency** (we will check for duplicate values and how to handle them)
 
 . **Uniformity** (we will check for uniformity in column data types)
 
-. **Validity** (we will handlle irrelevant columns and check for outliers )
+. **Validity** (we will handle irrelevant columns and check for outliers )
 
 ### DATA ANALYSIS
 
@@ -83,7 +83,7 @@ Comparing categorical variables with our target variables
 
 ### MODELLING
 
-We created 5 models and evaluated them to find the best fitting models for our target variables
+We created 5 models and evaluated them to find the best-fitting models for our target variables
 
 |MODEL	           |ACCURACY H1N1	|ACCURACY SEASONAL|	AUC H1N1 |AUC SEASONAL|
 |------------------|----------------|-----------------|----------|------------|
@@ -96,35 +96,39 @@ We created 5 models and evaluated them to find the best fitting models for our t
 
 **Evaluation**
 
-**Classfication metric used and why ?** 
+**Classification metric used and why?** 
 
-AUC measures the model specificity and sensitivity hence it measures the model ability to distinguish between postive and negative in imbbalanced data while accuracy score is easy to understand and interprate.
+AUC measures the model's specificity and sensitivity hence it measures the model's ability to distinguish between positive and negative in imbalanced data while the accuracy score is easy to understand and interpret.
 
-**Models choosen and their observations**
+**Models choose and their observations**
 
 With an AUC score of 0.65 and  an accuracy of 0.83, the Tuned KNN model is the best  model for predicting the "h1n1" class while  the logistic regression model is the best option for predicting the "seasonal" class because it has an accuracy of 0.78 and AUC score of 0.78
 
 **CONCLUSIONS**
 
-Majority of the respondents have been vaccinated with seasonal vaccine more than h1n1 vaccine
+The majority of the respondents have been vaccinated with seasonal vaccine more than the h1n1 vaccine
 
-Majority of the respondents who have been vaccinated are of female gender
+The majority of the respondents who have been vaccinated are of the female gender
 
-Majority of the respondents who have been vaccinated are 55 year old and above
+The majority of the respondents who have been vaccinated are 55 years old and above
 
-Majority of the respondents who have been vaccinated have a higher education level most of them had graduated from college
+The majority of the respondents who have been vaccinated have a higher education level most of them had graduated from college
 
 **RECOMMEDATIONS**
 
-. Targeted Vaccination programs: creating vaccination programs that targets the groups such as females, people aged 55 and over,   higher education students and high income earners..
+. Targeted Vaccination programs: creating vaccination programs that target groups such as females, people aged 55 and over,   higher education students, and high-income earners.
 
-. Addressing Racial discrepancies: While most of the vaccinated respondents were  white, other racial groups should be also monitored to prevent or stop any racial discrepanicies through public 
-  education and awareness campaigns and vaccination drives that target at all the ethnic groups to ensure those of color get equal access to the vaccines.
+. Addressing Racial discrepancies: While most of the vaccinated respondents were  white, other racial groups should be also monitored to prevent or stop any racial discrepancies through public 
+  education and awareness campaigns and vaccination drives that target all ethnic groups to ensure those of color get equal access to vaccines.
 
 
   **My Repository breakdown**
 
   The vaccine data folder contains two Excel dataset features and a label
+
+  The project presentation.pdf contains the presentation for this project [here]{https://github.com/Geraldkigotho/Flu-Shot-Learning-project/blob/main/Project%20presentation.pdf}
+
+  The project. ipynb contains the jupyter notebook for this project [here]{https://github.com/Geraldkigotho/Flu-Shot-Learning-project/blob/main/project.ipynb}
 
   
 
